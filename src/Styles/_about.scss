@@ -1,0 +1,75 @@
+.aboutUs {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+  .aboutHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    button {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .aboutContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: scroll;
+    .aboutImage {
+      width: 100%;
+      height: 300px;
+      background-image: url("../../assets/aboutback.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 50px;
+      height: 30px;
+    }
+    p {
+      padding: 5px 10px;
+    }
+  }
+}
+
+#dark {
+  background-color: $color-black;
+  color: $color-white;
+  button {
+    background-color: $color-black;
+    border: 2px solid $color-white;
+    svg {
+      color: $color-white;
+    }
+  }
+}
+
+#light {
+  background-color: $color-white;
+  color: $color-black;
+  button {
+    background-color: $color-white;
+    border: 2px solid $color-black;
+    svg {
+      color: $color-black;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .aboutContent {
+    overflow: scroll;
+  }
+}

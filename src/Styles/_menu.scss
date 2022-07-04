@@ -1,0 +1,34 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .menuHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    align-items: center;
+    .shoppingCart {
+      font-size: 18px;
+      font-weight: 600;
+      color: $color-black;
+      .cartIcon {
+        color: $color-black;
+      }
+    }
+  }
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+
+    & > .menuItem {
+      flex: 0 0 30%;
+    }
+  }
+}

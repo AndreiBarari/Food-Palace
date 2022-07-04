@@ -1,0 +1,50 @@
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  border: solid 6px transparent;
+  border-top: 6px solid $color-black;
+  padding: 6px 0;
+  border-radius: 20px;
+  box-shadow: 20px 24px 20px -20px $color-black;
+
+  .itemHeader {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    .price {
+      margin-left: auto;
+      float: right;
+    }
+  }
+  .description {
+    text-align: center;
+  }
+  .order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 144px;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $color-white;
+    background-color: $color-black;
+    cursor: pointer;
+    outline: none;
+    transition: ease-in-out 0.2s;
+    &:hover {
+      color: $color-black;
+      background-color: $color-white;
+      border: 3px solid $color-black;
+      font-weight: 600;
+    }
+  }
+}
