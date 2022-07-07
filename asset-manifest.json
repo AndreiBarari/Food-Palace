@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Food-Palace/static/css/main.ebf86555.css",
-    "main.js": "/Food-Palace/static/js/main.f43f1351.js",
+    "main.css": "/Food-Palace/static/css/main.788b147d.css",
+    "main.js": "/Food-Palace/static/js/main.58e85d6b.js",
     "static/js/787.b3e9f60a.chunk.js": "/Food-Palace/static/js/787.b3e9f60a.chunk.js",
     "static/media/logo1.png": "/Food-Palace/static/media/logo1.a7cfed89f8de23fe9ce8.png",
     "static/media/contactback.png": "/Food-Palace/static/media/contactback.182a8b3bb13b2e564753.png",
@@ -20,12 +20,12 @@
     "static/media/quattrostagioni.png": "/Food-Palace/static/media/quattrostagioni.1ddc653d8735c3081265.png",
     "static/media/hotdog 1.png": "/Food-Palace/static/media/hotdog 1.8cbe43a4649682ac6ec6.png",
     "index.html": "/Food-Palace/index.html",
-    "main.ebf86555.css.map": "/Food-Palace/static/css/main.ebf86555.css.map",
-    "main.f43f1351.js.map": "/Food-Palace/static/js/main.f43f1351.js.map",
+    "main.788b147d.css.map": "/Food-Palace/static/css/main.788b147d.css.map",
+    "main.58e85d6b.js.map": "/Food-Palace/static/js/main.58e85d6b.js.map",
     "787.b3e9f60a.chunk.js.map": "/Food-Palace/static/js/787.b3e9f60a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebf86555.css",
-    "static/js/main.f43f1351.js"
+    "static/css/main.788b147d.css",
+    "static/js/main.58e85d6b.js"
   ]
 }
