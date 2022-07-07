@@ -9,12 +9,24 @@
     position: relative;
     width: 90%;
     align-items: center;
-    .shoppingCart {
-      font-size: 18px;
+    padding: 10px 0;
+    .headerContent {
+      font-size: 26px;
       font-weight: 600;
       color: $color-black;
+      position: relative;
       .cartIcon {
         color: $color-black;
+        background-color: #f1f1f1;
+      }
+      .itemCount {
+        background-color: #d22b2b;
+        color: $color-white;
+        font-size: 12px;
+        border-radius: 50%;
+        padding: 2px 5px;
+        position: absolute;
+        right: -8px;
       }
     }
   }

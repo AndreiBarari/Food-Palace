@@ -4,18 +4,72 @@
   top: 58px;
   display: flex;
   flex-direction: column;
+  width: 340px;
+  padding: 4px 6px;
   background-color: $color-white;
   border: 2px solid $color-black;
-  .cartContent {
+  border-radius: 16px;
+  .cartTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .row {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 6px;
+    .collumn-2 {
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .buttons {
+      display: flex;
+      button {
+        border: none;
+        background-color: transparent;
+      }
+      .add {
+        color: #299718;
+      }
+      .remove {
+        color: #d22b2b;
+      }
+    }
+  }
+
+  .costSummary {
+    display: flex;
+    padding: 3px 6px;
+    justify-content: space-between;
+  }
+  .total {
+    font-weight: 600;
+  }
+  .confirm {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 24px;
-    padding: 4px 8px;
-    :nth-child(2) {
-      padding: 0 8px;
-      border-left: 1px solid $color-black;
-      border-right: 1px solid $color-black;
+    padding: 12px 0;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $color-white;
+    background-color: $color-black;
+    cursor: pointer;
+    outline: none;
+    transition: ease-in-out 0.3s;
+    &:hover {
+      color: $color-black;
+      background-color: $color-white;
+      border: 3px solid $color-black;
+      font-weight: 600;
     }
   }
 }

@@ -191,16 +191,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
 }
 
-.menu .menuHeader .shoppingCart {
-  font-size: 18px;
+.menu .menuHeader .headerContent {
+  font-size: 26px;
   font-weight: 600;
   color: #121619;
+  position: relative;
 }
 
-.menu .menuHeader .shoppingCart .cartIcon {
+.menu .menuHeader .headerContent .cartIcon {
   color: #121619;
+  background-color: #f1f1f1;
+}
+
+.menu .menuHeader .headerContent .itemCount {
+  background-color: #d22b2b;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 5px;
+  position: absolute;
+  right: -8px;
 }
 
 .menu .menuItems {
@@ -313,29 +326,110 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 340px;
+  padding: 4px 6px;
   background-color: #fff;
   border: 2px solid #121619;
+  border-radius: 16px;
 }
 
-.cart .cartContent {
+.cart .cartTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cart .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 6px;
+}
+
+.cart .row .collumn-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart .row .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart .row .buttons button {
+  border: none;
+  background-color: transparent;
+}
+
+.cart .row .buttons .add {
+  color: #299718;
+}
+
+.cart .row .buttons .remove {
+  color: #d22b2b;
+}
+
+.cart .costSummary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px 6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart .total {
+  font-weight: 600;
+}
+
+.cart .confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 24px;
-  padding: 4px 8px;
+  padding: 12px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  background-color: #121619;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
-.cart .cartContent :nth-child(2) {
-  padding: 0 8px;
-  border-left: 1px solid #121619;
-  border-right: 1px solid #121619;
+.cart .confirm:hover {
+  color: #121619;
+  background-color: #fff;
+  border: 3px solid #121619;
+  font-weight: 600;
 }
 
 .aboutUs {
@@ -474,7 +568,7 @@
 }
 
 .contact .contactRight h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: 10;
   font-size: 50px;
   margin-left: 30px;
@@ -508,6 +602,7 @@
   border: none;
   border-bottom: 1px solid #121619;
   color: black;
+  resize: none;
 }
 
 .contact .contactRight form input::-webkit-input-placeholder,

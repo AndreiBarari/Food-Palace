@@ -1,16 +1,18 @@
 import React from "react";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
-function MenuItem({ id, name, image, price, description }) {
+function MenuItem(props) {
+  const { product, onAdd } = props;
+
   return (
-    <div key={id} className="menuItem">
+    <div key={product.id} className="menuItem">
       <div className="itemHeader">
-        <div className="title">{name}</div>
-        <div className="price">${price}</div>
+        <div className="title">{product.name}</div>
+        <div className="price">${product.price}</div>
       </div>
-      <img className="image" src={image} alt="" />
-      <div className="description">{description}</div>
-      <button className="order">
+      <img className="image" src={product.image} alt="" />
+      <div className="description">{product.description}</div>
+      <button className="order" onClick={() => onAdd(product)}>
         Order
         <span>
           <AddShoppingCartIcon />

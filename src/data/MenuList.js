@@ -11,7 +11,7 @@ import QuattroStagioniPizza from "../assets/quattrostagioni.png";
 import SpicyPizza from "../assets/spicypizza.png";
 import OlivePizza from "../assets/olivepizza.png";
 
-export const MenuItems = [
+export const products = [
   {
     id: 1,
     name: "Classic Dog",
@@ -88,7 +88,7 @@ export const MenuItems = [
     id: 10,
     name: "Quattro Stagioni",
     image: QuattroStagioniPizza,
-    price: 15.99,
+    price: 9.59,
     description:
       "Sample text. Click to select the text box. Click again or double click to start editing the text",
   },
@@ -96,7 +96,7 @@ export const MenuItems = [
     id: 11,
     name: "Spicy Pizza",
     image: SpicyPizza,
-    price: 13.99,
+    price: 9.99,
     description:
       "Sample text. Click to select the text box. Click again or double click to start editing the text",
   },
@@ -104,7 +104,7 @@ export const MenuItems = [
     id: 12,
     name: "Olive Pizza",
     image: OlivePizza,
-    price: 12.99,
+    price: 8.99,
     description:
       "Sample text. Click to select the text box. Click again or double click to start editing the text",
   },

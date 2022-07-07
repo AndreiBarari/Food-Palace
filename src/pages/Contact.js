@@ -6,7 +6,7 @@ function Contact() {
       <div className="contactLeft"></div>
       <div className="contactRight">
         <h1>Contact Us</h1>
-        <form id="contactForm" method="POST">
+        <form id="contactForm">
           <label htmlFor="name">Full name</label>
           <input type="text" name="name" placeholder="Enter full name" />
           <label htmlFor="email">Email adddress</label>
@@ -20,7 +20,7 @@ function Contact() {
             placeholder="Your message to us"
             required
           ></textarea>
-          <button type="submit">Submit</button>
+          <button>Submit</button>
         </form>
       </div>
     </div>
